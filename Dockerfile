@@ -8,7 +8,8 @@ RUN apt-get update \
 
 WORKDIR stanford-corenlp-full-2016-10-31
 
-RUN wget http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar
+RUN wget http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar \
+    && wget http://nlp.stanford.edu/software/stanford-english-corenlp-2016-10-31-models.jar
 
 ENV PORT 9000
 

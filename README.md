@@ -3,7 +3,8 @@ Docker image - Stanford CoreNLP with Chinese Model
 
 ### Details
 - CoreNLP 3.7.0
-- Chinese language Model
+- English language model
+- Chinese language model
 
 ### Build image
     docker build -t skywidesoft/corenlp-chinese .
