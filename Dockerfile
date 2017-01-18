@@ -15,4 +15,4 @@ ENV PORT 9000
 
 EXPOSE $PORT
 
-CMD java -cp "*" -mx6g edu.stanford.nlp.pipeline.StanfordCoreNLPServer
+CMD java -Xmx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -serverProperties StanfordCoreNLP-chinese.properties -port 9000 -timeout 15000
