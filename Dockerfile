@@ -2,14 +2,14 @@ FROM openjdk:8-jre
 MAINTAINER Clarence Ho <clarence@skywidesoft.com>
 
 RUN apt-get update \
-    && wget http://nlp.stanford.edu/software/stanford-corenlp-full-2016-10-31.zip \
-    && unzip stanford-corenlp-full-2016-10-31.zip \
-    && rm stanford-corenlp-full-2016-10-31.zip
+    && wget http://nlp.stanford.edu/software/stanford-corenlp-full-2017-06-09.zip \
+    && unzip stanford-corenlp-full-2017-06-09.zip \
+    && rm stanford-corenlp-full-2017-06-09.zip
 
-WORKDIR stanford-corenlp-full-2016-10-31
+WORKDIR stanford-corenlp-full-2017-06-09
 
-RUN wget http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar \
-    && wget http://nlp.stanford.edu/software/stanford-english-corenlp-2016-10-31-models.jar
+RUN wget http://nlp.stanford.edu/software/stanford-chinese-corenlp-2017-06-09-models.jar \
+    && wget http://nlp.stanford.edu/software/stanford-english-corenlp-2017-06-09-models.jar
 
 ENV PORT 9000
 
